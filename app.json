@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "dormitory_rent",
+    "name": "ZMK အဆောင်",
     "slug": "dormitory_rent",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/home_rent_icon.png",
     "scheme": "dormitoryrent",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/home_rent_icon.png"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.chantoewhan.dormitory_rent"
     },
     "web": {
       "output": "static",
@@ -34,11 +35,19 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      "expo-image",
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c898afc9-5829-4df5-873a-c54603eac6b9"
+      }
     }
   }
 }
